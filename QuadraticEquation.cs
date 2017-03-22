@@ -31,16 +31,19 @@ namespace QuadraticEquationSolver
                 
                 return false;
             }
-            else if (D > 0)
+
+            else if (D == 0)
             {
-                X1 = (-B + Math.Sqrt(D)) / (2 * A);
-                X2 = (-B - Math.Sqrt(D)) / (2 * A);
+                X1 = -B / (2 * A);
+                X2 = X1;
                 
                 return true;
             }
 			else
 			{
-				X1 = X2 = -B / (2 * A);
+				X1 = (-B + Math.Sqrt(D)) / (2 * A);
+				X2 = (-B - Math.Sqrt(D)) / (2 * A);
+				
 				return true;
 			}
         }
