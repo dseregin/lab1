@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Решение_квадратного_уравнения
+namespace QuadraticEquationSolver
 {
     public class QuadraticEquation
     {
@@ -16,9 +16,9 @@ namespace Решение_квадратного_уравнения
 
         public QuadraticEquation(double a, double b, double c)
         {
-            this.A = a;
-            this.B = b;
-            this.C = c;
+            A = a;
+            B = b;
+            C = c;
         }
 
         public bool Solve()
